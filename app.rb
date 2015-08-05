@@ -10,7 +10,10 @@ end
 
 
   get('/score') do
-    @player1 = params.fetch("player1").rock_paper_scissors()
-    @player2 = params.fetch("player2").rock_paper_scissors()
+    @player1 = params.fetch("player1")
+    @player2 = params.fetch("player2")
+    #binding.pry
+    @score = @player1.rock_paper_scissors(@player2)
+
     erb(:score)
   end

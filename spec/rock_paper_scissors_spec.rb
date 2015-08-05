@@ -4,17 +4,17 @@ require('pry')
 
 describe('String#rock_paper_scissors') do
 
-  it("returns true if rock is the object and scissors is the argument") do
-    expect("rock".rock_paper_scissors("scissors")).to(eq(true))
+  it("returns 'Player1 Wins!' if rock is the object and scissors is the argument") do
+    expect("rock".rock_paper_scissors("scissors")).to(eq("Player1 Wins!"))
   end
 
 
-  it("returns false if rock is the object and paper is the argument") do
-    expect("rock".rock_paper_scissors("paper")).to(eq(false))
+  it("returns 'Player2 Wins!' if rock is the object and paper is the argument") do
+    expect("rock".rock_paper_scissors("paper")).to(eq("Player2 Wins!"))
   end
 
 
-  it("returns true if scissors is the object and paper is the argument") do
-    expect("scissors".rock_paper_scissors("paper")).to(eq(true))
+  it("returns 'You got a tie!' if scissors is the object and paper is the argument") do
+    expect("scissors".rock_paper_scissors("scissors")).to(eq("You got a tie!"))
   end
 end
