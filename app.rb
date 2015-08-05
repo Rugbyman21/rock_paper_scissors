@@ -24,8 +24,7 @@ end
 
   get('/singlescore') do
     @player1 = params.fetch("player1")
-    #@player_comp = params.fetch("player_comp")
     @score = @player1.rock_paper_scissors(@player_comp)
 
-    erb(:score)
+    erb(:singlescore)
   end
