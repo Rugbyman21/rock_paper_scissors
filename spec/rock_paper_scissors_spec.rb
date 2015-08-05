@@ -13,4 +13,8 @@ describe('String#rock_paper_scissors') do
     expect("rock".rock_paper_scissors("paper")).to(eq(false))
   end
 
+
+  it("returns true if scissors is the object and paper is the argument") do
+    expect("scissors".rock_paper_scissors("paper")).to(eq(true))
+  end
 end
